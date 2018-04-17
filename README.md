@@ -1,6 +1,11 @@
-### Translate JavaScript to Ruby Lab
+# Ruby Monk and Translate JavaScript to Ruby Lab
 
-# Let's Look at the Differences
+## Part 1: 
+Work through the [RubyMonk Primer](http://rubymonk.com/learning/books/1-ruby-primer) from “Classes and Object Oriented Programming in Ruby”  to “Introduction to Lambdas and Blocks”.
+
+## Part 2:
+
+### Let's Look at the Differences
 
 ![cat owls](https://outofdoubt.files.wordpress.com/2015/01/not-like-the-others-owls.jpg)
 
@@ -57,6 +62,21 @@ var multiplyArray = function (ary) {
   return total;
 };
 ```
+
+### Array includes a value
+``` javascript
+var searchArray = function(array,value) {
+  for(var i = 0; i < array.length-1; i++) {
+    if(array[i] == value) {
+      return true;
+      break;
+    }
+  }
+  return -1;
+};
+```
+## Bonuses:
+
 ### Nth Fibonacci Number
 ```javascript
 var nthFibonacciNumber = function () {
@@ -70,19 +90,6 @@ var nthFibonacciNumber = function () {
   }
 
   alert(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
-};
-```
-
-### Array includes a value
-``` javascript
-var searchArray = function(array,value) {
-  for(var i = 0; i < array.length-1; i++) {
-    if(array[i] == value) {
-      return true;
-      break;
-    }
-  }
-  return -1;
 };
 ```
 
