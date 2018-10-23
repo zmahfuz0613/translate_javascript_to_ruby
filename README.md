@@ -1,11 +1,5 @@
-# Ruby Monk and Translate JavaScript to Ruby Lab
+# Translate JavaScript to Ruby
 
-## Part 1: 
-Work through the [RubyMonk Primer](http://rubymonk.com/learning/books/1-ruby-primer) from “Classes and Object Oriented Programming in Ruby”  to “Introduction to Lambdas and Blocks”.
-
-## Part 2:
-
-### Let's Look at the Differences
 
 ![cat owls](https://outofdoubt.files.wordpress.com/2015/01/not-like-the-others-owls.jpg)
 
