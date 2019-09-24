@@ -7,50 +7,51 @@
 
 ### Get Name
 ```javascript
-var getName = function () {
-  var name = prompt("what is your name?");
+const getName = () => {
+  const name = prompt("what is your name?");
   return name;
 };
 ```
 
 ### Reverse It
 ```javascript
-var reverseIt = function () {
-  var string = "a man, a plan, a canal, frenemies!";
+const reverseIt = () => {
+  const string = "a man, a plan, a canal, frenemies!";
 
-  var reverse = "";
+  let reverse = "";
 
-  for (var i=0; i < string.length; i++) {
+  for (let i=0; i < string.length; i++) {
     reverse += string[string.length - (i+1)];
   };
 
-  alert(reverse);
+  console.log(reverse);
 };
 ```
 ### Swap Em
 ```javascript
-var swapEm = function () {
-  var a = 10;
-  var b = 30;
-  var temp;
+const swapEm = () => {
+  let a = 10;
+  let b = 30;
+  let temp;
 
   temp = b;
   b = a;
   a = temp;
 
-  alert("a is now " + a + ", and b is now " + b);
+  console.log("a is now " + a + ", and b is now " + b);
 };
 ```
 ### Multiply Array
 ```javascript
-var multiplyArray = function (ary) {
-  if (ary.length == 0) { return 1; };
+const multiplyArray = (arr) => {
+  if (arr.length == 0) {
+    return 1; 
+  };
 
-  var total = 1;
-  // var total = ary[0];
+  let total = 1;
 
-  for (var i=0; i < ary.length; i++) {
-    total = total * ary[i];
+  for (let i = 0; i < arr.length; i++) {
+    total = total * arr[i];
   };
 
   return total;
@@ -59,9 +60,9 @@ var multiplyArray = function (ary) {
 
 ### Array includes a value
 ``` javascript
-var searchArray = function(array,value) {
-  for(var i = 0; i < array.length-1; i++) {
-    if(array[i] == value) {
+const searchArray = (array, value) => {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == value) {
       return true;
       break;
     }
@@ -73,25 +74,25 @@ var searchArray = function(array,value) {
 
 ### Nth Fibonacci Number
 ```javascript
-var nthFibonacciNumber = function () {
-  var fibs = [1, 1];
-  var num = prompt("which fibonacci number do you want?");
+const nthFibonacciNumber = () => {
+  const fibs = [1, 1];
+  const num = prompt("which fibonacci number do you want?");
 
   while (fibs.length < parseInt(num)) {
-    var length = fibs.length;
-    var nextFib = fibs[length - 2] + fibs[length - 1];
+    const length = fibs.length;
+    const nextFib = fibs[length - 2] + fibs[length - 1];
     fibs.push(nextFib);
   }
 
-  alert(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
+  console.log(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
 };
 ```
 
 ### Palindrome
-``` javascript
-var isPalindrome = function(str) {
-  for(var i = 0; i < str.length/2; i++){
-    if(str[i] != str[str.length-i-1]){
+```javascript
+const isPalindrome = (str) => {
+  for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] != str[str.length-i-1]) {
       return false;
       break;
     }
@@ -101,11 +102,11 @@ var isPalindrome = function(str) {
 ```
 
 ### hasDupes
-``` javascript
-var hasDupes = function(arr){
-  var obj = {};
-  for (i = 0; i < arr.length; i++) {
-    if(obj[arr[i]]) {
+```javascript
+const hasDupes = (arr) => {
+  const obj = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]]) {
       return true;
     }
     else {
