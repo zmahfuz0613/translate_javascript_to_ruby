@@ -20,13 +20,14 @@ const reverseIt = () => {
 
   let reverse = "";
 
-  for (let i=0; i < string.length; i++) {
-    reverse += string[string.length - (i+1)];
+  for (let i = 0; i < string.length; i++) {
+    reverse += string[string.length - (i + 1)];
   };
 
   console.log(reverse);
 };
 ```
+
 ### Swap Em
 ```javascript
 const swapEm = () => {
@@ -38,9 +39,10 @@ const swapEm = () => {
   b = a;
   a = temp;
 
-  console.log("a is now " + a + ", and b is now " + b);
+  console.log(`a is now ${a} and b is now ${b}`);
 };
 ```
+
 ### Multiply Array
 ```javascript
 const multiplyArray = (arr) => {
@@ -64,12 +66,12 @@ const searchArray = (array, value) => {
   for (let i = 0; i < array.length; i++) {
     if (array[i] == value) {
       return true;
-      break;
     }
   }
   return -1;
 };
 ```
+
 ## Bonuses:
 
 ### Nth Fibonacci Number
@@ -92,9 +94,8 @@ const nthFibonacciNumber = () => {
 ```javascript
 const isPalindrome = (str) => {
   for (let i = 0; i < str.length / 2; i++) {
-    if (str[i] != str[str.length-i-1]) {
+    if (str[i] != str[str.length - (i - 1)]) {
       return false;
-      break;
     }
     return true;
   }
