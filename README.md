@@ -120,3 +120,6 @@ const hasDupes = (arr) => {
 
 ## Sign up for Code Wars
 Pick some Ruby code challenges, find a good one? Share it in slack!
+
+
+<!-- wop -->
